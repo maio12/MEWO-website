@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  .mySwiper {
+    width: 100vw;
+    height: 100vh;
+
+  }
+  .swipItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swipItem .imgBox {
+    height: 80vh;
+    margin: 0 auto;
+  }
+  .swipItem .imgBox img {
+    display: block;
+  }
+  .detail {
+    margin: 1rem 0;
+  }
+
+  

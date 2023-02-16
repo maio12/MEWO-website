@@ -1,0 +1,28 @@
+.formContainer {
+    color: white;
+    display: flex;
+    min-width: 50vw;
+    min-height: 40vh;
+    flex-direction: column;
+    background-color: tomato;
+    align-items: center;
+}
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+}
+
+.thanksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: teal;
+    min-width: inherit;
+    min-height: inherit;
+    align-items: center;
+    transition: background-color, 0.5s;
+}
+
+
