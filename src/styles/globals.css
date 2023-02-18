@@ -18,7 +18,8 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  color: rgb(var(--foreground-rgb));
+  color: #FDFFFC;
+  background-color: #020100;
 }
 
 a {
@@ -31,6 +32,11 @@ a {
     color-scheme: dark;
   }
 } 
+
+h1 {
+  align-self: flex-start;
+}
+
 
 img {
   max-width: 100%;

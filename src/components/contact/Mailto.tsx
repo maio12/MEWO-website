@@ -1,6 +1,6 @@
 import Link from "next/link";
 import * as React from "react";
-import styles from "@/styles/contact/Email.module.css";
+import styles from "@/styles/contact/Contact.module.css";
 
 interface MailtoProps {
   email: string;
@@ -15,7 +15,7 @@ export const Mailto = ({ email, subject, body }: MailtoProps) => {
       <Link
         href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}
       >
-        <h3 className={styles.email}>{email}</h3>{" "}
+        <h3 className={styles.email}>{email}</h3>
       </Link>
     </div>
   );

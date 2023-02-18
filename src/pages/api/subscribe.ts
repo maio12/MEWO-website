@@ -1,7 +1,16 @@
 import axios from "axios";
+import { NextApiRequest, NextApiResponse } from "next";
 
-export default async (req, res) => {
-  const { email } = req.body;
+interface ExtendedNextApiRequest extends NextApiRequest {
+  body: {
+    email: string;
+    firstName?: string;
+    lastName?: string;
+  };
+}
+
+export default async (req: ExtendedNextApiRequest, res: NextApiResponse) => {
+  const { email, firstName, lastName } = req.body;
 
   if (!email || !email.length) {
     return res.status(400).json({ error: "Email is required" });
@@ -15,6 +24,10 @@ export default async (req, res) => {
 
   const data = {
     email_address: email,
+    merge_fields: {
+      FNAME: firstName || "noname",
+      LNAME: lastName || "nosurname",
+    },
     status: "subscribed",
   };
 
@@ -32,9 +45,15 @@ export default async (req, res) => {
         error: `There was an error subscribing to the newsletter. Shoot us an email and we'll add you to the list.`,
       });
     }
+
     return res.status(201).json({ message: "success" });
   } catch (error) {
-    console.log(error);
-    return res.status(500).json({ error: error.message });
+    if (error instanceof Error) {
+      console.log(error.message);
+
+      return res.status(500).json({ error: error.message });
+    } else {
+      console.log("Unexpected error", error);
+    }
   }
 };

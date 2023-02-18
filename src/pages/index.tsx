@@ -16,10 +16,11 @@ const carouselItems: CarouselItem[] = [
     alt: "My Eyes Wide Open",
   },
   {
-    src: "/images/ausdauer.png",
+    src: "/images/ausdauer2.png",
     alt: "Listen to the new EP Ausdauer",
     description: {
-      title: "Listen to the new EP Ausdauer",
+      text: "LISTEN TO THE NEW EP",
+      title: "AUSDAUER",
     },
   },
 ];
@@ -32,7 +33,7 @@ export default function Home() {
         <Head>
           <title>My Eyes Wide Open</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/Untitled.svg" />
         </Head>
         <main className={styles.main}>
           <ResponsiveCarousel carouselItems={carouselItems} />

@@ -4,18 +4,22 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import Layout from "@/components/layout";
 import Navbar from "@/components/navigation/NavBar";
-import { NewsLetterSignUpForm } from "@/components/contact/Form";
-import { Mailto } from "@/components/contact/Mailto";
-import { SocialIcons } from "@/components/contact/SocialIcons";
-import { SocialLinks } from "@/components/contact/SocialLinks";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const socialMedia = [
-  { name: "YouTube", link: "/", icon: "/images/youtube.svg" },
-  { name: "SoundCloud", link: "/", icon: "/images/soundcloud.svg" },
-  { name: "Facebook", link: "/", icon: "/images/facebook.svg" },
-];
+const description = `Power trio from the Milan underground. Loud jazz for the present times.`;
+
+const personnell = `Giovanni Maiocchi - Guitar and compositions
+Fabrizio Carriero - Drums
+Antonio Maiocchi - Bass`;
+
+const description2 = `With their new EP - AUSDAUER, they are poised to make a significant statement on the jazz and rock scene. Subscribe to the newsletter to be informed about concerts of My Eyes Wide Open near you!
+`;
+
+const image = {
+  src: "/images/memo.png",
+  alt: "MY EYES WIDE OPEN",
+};
 
 export default function Band() {
   return (
@@ -25,16 +29,27 @@ export default function Band() {
         <Head>
           <title>The Band</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/Untitled.svg" />
         </Head>
         <main className={styles.main}>
           <h1 className={styles.title}>The Band</h1>
-          <p>
-            {
-              "some description about the band Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
-            }
+          <p>{description}</p>
+          <br />
+          <p style={{ display: "flex", flexDirection: "column" }}>
+            {personnell}
           </p>
+
+          <br />
+          <p>{description2}</p>
         </main>
+        <div className={styles.theBandImage}>
+          <Image
+            src={image.src}
+            alt={image.alt}
+            fill
+            style={{ objectFit: "contain" }}
+          />
+        </div>
       </Layout>
     </>
   );

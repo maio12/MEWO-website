@@ -11,22 +11,27 @@ const inter = Inter({ subsets: ["latin"] });
 
 const mediaPieces: MediaPieceProps[] = [
   {
-    name: "My Eyes Wide Open",
+    name: "Ausdauer",
     description:
-      "My Eyes Wide Open's first EP, recorded in 2009 in xyz. Personnell: Giovanni Maiocchi - guitar and compositions, Fabrizio Carriero: drums, Antonio Maiocchi: bass guitar",
-    link: "https://soundcloud.com/my_eyes_wide_open/sets/myeyeswideopen",
+      "My Eyes Wide Open's latest EP, recorded in 2023 at Trai Studio, Inzago. ",
+    description2:
+      "Giovanni Maiocchi - guitar and compositions, Fabrizio Carriero: drums, Antonio Maiocchi: bass guitar",
+    link: "https://soundcloud.com/my_eyes_wide_open/sets/ausdauer",
   },
   {
     name: "Speechless",
-    description:
-      "My Eyes Wide Open's second EP, recorded in 2014 in xyz. Personnell: Giovanni Maiocchi - guitar and compositions, Fabrizio Carriero: drums, Andrea Grossi: doublebass",
+    description: "My Eyes Wide Open's second EP, recorded in 2014. ",
+    description2:
+      "Personnell: Giovanni Maiocchi - guitar and compositions, Fabrizio Carriero: drums, Andrea Grossi: doublebass",
+
     link: "https://soundcloud.com/my_eyes_wide_open/sets/speechless",
   },
   {
-    name: "Ausdauer",
-    description:
-      "My Eyes Wide Open's latest EP, recorded in 2023 in xyz. Personnell: Giovanni Maiocchi - guitar and compositions, Fabrizio Carriero: drums, Antonio Maiocchi: bass guitar",
-    link: "https://soundcloud.com/my_eyes_wide_open/sets/ausdauer",
+    name: "My Eyes Wide Open",
+    description: `My Eyes Wide Open's first EP, recorded in 2009.`,
+    description2:
+      "Personnell: Giovanni Maiocchi - guitar and compositions, Fabrizio Carriero: drums, Antonio Maiocchi: bass guitar",
+    link: "https://soundcloud.com/my_eyes_wide_open/sets/myeyeswideopen",
   },
   {
     name: "Promo Video",
@@ -44,7 +49,7 @@ export default function Media() {
         <Head>
           <title>Media</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/Untitled.svg" />
         </Head>
         <main className={styles.main}>
           <h1 className={styles.title}>Media</h1>

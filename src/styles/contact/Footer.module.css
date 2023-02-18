@@ -1,0 +1,31 @@
+.footerContainer {
+  height: 5rem;
+  text-align: center;
+  background-color: rgba(253, 255, 252, 0.2);
+}
+
+.footerWrapper {
+  padding-left: 0.5rem;
+}
+
+.footerText {
+  font-size: small;
+}
+
+@media screen and (min-width: 768px) {
+  .footerContainer {
+    display: block;
+
+    height: 5rem;
+    text-align: center;
+    background-color: rgba(253, 255, 252, 0.2);
+  }
+
+  .footerWrapper {
+    padding-left: 0.5rem;
+  }
+
+  .footerText {
+    font-size: small;
+  }
+}

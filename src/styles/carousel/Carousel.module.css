@@ -4,11 +4,11 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
   }
   .mySwiper {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
 
   }
   .swipItem {
@@ -27,6 +27,17 @@
   }
   .detail {
     margin: 1rem 0;
+    position: absolute;
+    top: 30vh;
+    color: #FDFFFC;
+    width: 100%;
+    background-color: rgba(253, 255, 252, 0.2);
   }
-
-  
+  @media screen and (min-width: 768px) {
+    .mySwiper {
+        padding: 0 4rem;
+        /* width: 90vw; */
+        /* height: 100vh; */
+    
+      }
+    }
