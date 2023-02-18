@@ -9,7 +9,10 @@ interface ExtendedNextApiRequest extends NextApiRequest {
   };
 }
 
-export default async (req: ExtendedNextApiRequest, res: NextApiResponse) => {
+const submitForm = async (
+  req: ExtendedNextApiRequest,
+  res: NextApiResponse
+) => {
   const { email, firstName, lastName } = req.body;
 
   if (!email || !email.length) {
@@ -57,3 +60,5 @@ export default async (req: ExtendedNextApiRequest, res: NextApiResponse) => {
     }
   }
 };
+
+export default submitForm;

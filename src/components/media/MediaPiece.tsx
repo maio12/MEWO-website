@@ -25,7 +25,7 @@ export const MediaPieces = ({ mediaPiece }: MediaPiecesProps) => {
   return (
     <>
       {mediaPiece.map((m) => (
-        <MediaPiece {...m} />
+        <MediaPiece key={m.name} {...m} />
       ))}
     </>
   );
@@ -38,17 +38,25 @@ const MediaPiece = ({
   link,
   cta,
 }: MediaPieceProps) => {
+  const [domLoaded, setDomLoaded] = React.useState(false);
+
+  React.useEffect(() => {
+    setDomLoaded(true);
+  }, []);
+
   return (
     <div className={styles.mediaPieceWrapper}>
       <h3 className={styles.mediaPieceName}>{name}</h3>
-      <p className={styles.mediaPieceDescription}>{description}</p>
-      <p className={styles.mediaPieceDescription2}>{description2}</p>
-      <ReactPlayer
-        style={{
-          maxWidth: "90vw",
-        }}
-        url={`${link}`}
-      />
+      <div className={styles.mediaPieceDescription}>{description}</div>
+      <div className={styles.mediaPieceDescription2}>{description2}</div>
+      {domLoaded && (
+        <ReactPlayer
+          style={{
+            maxWidth: "90vw",
+          }}
+          url={`${link}`}
+        />
+      )}
       <h3 className={styles.mediaPieceCTA}>{cta}</h3>
     </div>
   );

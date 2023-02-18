@@ -14,7 +14,10 @@
   }
   .theBandImage {
     display: block;
+    position: relative;
     margin: 0 auto;
+    padding: 1rem 0;
+    height: 50vh;
     padding: 1rem 0;
   }
 }

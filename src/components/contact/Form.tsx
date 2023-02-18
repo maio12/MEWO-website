@@ -27,27 +27,27 @@ export const NewsLetterSignUpForm = () => {
   const [state, setState] = React.useState(STATES.IDLE);
   const [submitted, setSubmitted] = React.useState(false);
 
-  const subscribe = useCallback(
-    async ({ email, firstName, lastName }: NewsletterSignupFormProps) => {
-      setState(STATES.LOADING);
-      console.log(email, state, firstName, lastName);
+  const subscribe = async ({
+    email,
+    firstName,
+    lastName,
+  }: NewsletterSignupFormProps) => {
+    setState(STATES.LOADING);
 
-      try {
-        setSubmitted(true);
+    try {
+      setSubmitted(true);
 
-        await axios.post("/api/subscribe", {
-          email,
-          firstName,
-          lastName,
-        });
+      await axios.post("/api/subscribe", {
+        email,
+        firstName,
+        lastName,
+      });
 
-        setState(STATES.SUCCESS);
-      } catch (e) {
-        setState(STATES.ERROR);
-      }
-    },
-    []
-  );
+      setState(STATES.SUCCESS);
+    } catch (e) {
+      setState(STATES.ERROR);
+    }
+  };
 
   return !submitted ? (
     <div className={styles.formContainer}>

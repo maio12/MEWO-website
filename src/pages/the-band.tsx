@@ -33,14 +33,14 @@ export default function Band() {
         </Head>
         <main className={styles.main}>
           <h1 className={styles.title}>The Band</h1>
-          <p>{description}</p>
+          <div>{description}</div>
           <br />
-          <p style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex", flexDirection: "column" }}>
             {personnell}
-          </p>
+          </div>
 
           <br />
-          <p>{description2}</p>
+          <div>{description2}</div>
         </main>
         <div className={styles.theBandImage}>
           <Image

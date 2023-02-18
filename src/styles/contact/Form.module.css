@@ -2,6 +2,7 @@
   color: #fdfffc;
   display: flex;
   min-height: 40vh;
+  justify-content: center;
   margin: 0 auto;
   margin-top: 0.5rem;
   flex-direction: column;
@@ -75,6 +76,7 @@
   .formContainer {
     color: #fdfffc;
     display: flex;
+    justify-content: center;
     width: 30vw;
     min-height: 40vh;
     margin: 0 auto;
