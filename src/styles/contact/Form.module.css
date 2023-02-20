@@ -36,7 +36,8 @@
 }
 
 .formSubmit {
-  background-color: #f1d302;
+  background: linear-gradient(135deg, #43dd29 35%, #9d22c8);
+  filter: drop-shadow(2px 2px 10px #9d22c8);
   border: none;
   font-size: medium;
   padding: 0.5rem;
@@ -117,12 +118,13 @@
   }
 
   .formSubmit {
-    background-color: #232323;
+    background: linear-gradient(135deg, #43dd29 35%, #9d22c8);
     border: none;
     font-size: medium;
     padding: 0.5rem;
     border-radius: 2px;
     margin: 1rem 0;
+    filter: drop-shadow(2px 2px 10px #9d22c8);
   }
 
   .thanksContainer {
