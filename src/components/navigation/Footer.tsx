@@ -4,9 +4,21 @@ import styles from "@/styles/contact/Footer.module.css";
 import { SocialIcons } from "../contact/SocialIcons";
 
 const socialMedia = [
-  { name: "YouTube", link: "/", icon: "/images/youtube.svg" },
-  { name: "SoundCloud", link: "/", icon: "/images/soundcloud.svg" },
-  { name: "Facebook", link: "/", icon: "/images/facebook.svg" },
+  {
+    name: "YouTube",
+    link: "https://www.youtube.com/@gioblast75",
+    icon: "/images/youtube.svg",
+  },
+  {
+    name: "SoundCloud",
+    link: "https://soundcloud.com/my_eyes_wide_open",
+    icon: "/images/soundcloud.svg",
+  },
+  {
+    name: "Facebook",
+    link: "https://www.facebook.com/MyEyesWideOpen",
+    icon: "/images/facebook.svg",
+  },
 ];
 
 export const Footer = () => {
