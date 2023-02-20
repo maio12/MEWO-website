@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 const description = `Power trio from the Milan underground. Loud jazz for the present times.`;
 
-const personnell = `Giovanni Maiocchi - Guitar and compositions
-Fabrizio Carriero - Drums
+const personnell = `Giovanni Maiocchi - Guitar and compositions,
+Fabrizio Carriero - Drums,
 Antonio Maiocchi - Bass`;
 
 const description2 = `With their new EP - AUSDAUER, they are poised to make a significant statement on the jazz and rock scene. Subscribe to the newsletter to be informed about concerts of My Eyes Wide Open near you!

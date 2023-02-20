@@ -22,7 +22,7 @@ const mediaPieces: MediaPieceProps[] = [
     name: "Speechless",
     description: "My Eyes Wide Open's second EP, recorded in 2014. ",
     description2:
-      "Personnell: Giovanni Maiocchi - guitar and compositions, Fabrizio Carriero: drums, Andrea Grossi: doublebass",
+      "Giovanni Maiocchi - guitar and compositions, Fabrizio Carriero: drums, Andrea Grossi: doublebass",
 
     link: "https://soundcloud.com/my_eyes_wide_open/sets/speechless",
   },
@@ -30,7 +30,7 @@ const mediaPieces: MediaPieceProps[] = [
     name: "My Eyes Wide Open",
     description: `My Eyes Wide Open's first EP, recorded in 2009.`,
     description2:
-      "Personnell: Giovanni Maiocchi - guitar and compositions, Fabrizio Carriero: drums, Antonio Maiocchi: bass guitar",
+      "Giovanni Maiocchi - guitar and compositions, Fabrizio Carriero: drums, Antonio Maiocchi: bass guitar",
     link: "https://soundcloud.com/my_eyes_wide_open/sets/myeyeswideopen",
   },
   {
